@@ -16,3 +16,4 @@ config:
   imapPort: "993"
   targetEmailAddress: info@account.netflix.com
   targetEmailSubject: <full-email-subject-to-monitor>
+  metricsPort: "9090"

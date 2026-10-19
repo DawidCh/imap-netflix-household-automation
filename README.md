@@ -76,6 +76,9 @@ docker compose logs -f
 - **TARGET_EMAIL_ADDRESS**: The email address to monitor e.g. *info@netflix.com*
 - **TARGET_EMAIL_SUBJECT**: The email subject to monitor e.g. *"How to update your Netflix household"*
 
+### Metrics port
+- **METRICS_PORT**: The port where metrics are exposed e.g. *9090*
+
 ## Docker image build
 `docker buildx build     --builder armbuilder     --platform linux/arm64,linux/amd64 --push     --no-cache     -f imap-netflix-household-automation.dockerfile     -t dawidch/netflix-household-automation:1.0.0     --progress=plain  --network host   .`
 

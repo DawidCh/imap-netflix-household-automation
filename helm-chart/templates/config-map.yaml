@@ -5,6 +5,7 @@ metadata:
 data:
   IMAP_HOST: {{ .Values.config.imapHost | quote }}
   IMAP_PORT: {{ .Values.config.imapPort | quote }}
+  METRICS_PORT: {{ .Values.config.metricsPort | quote }}
   TARGET_EMAIL_ADDRESS: {{ .Values.config.targetEmailAddress | quote }}
   TARGET_EMAIL_SUBJECT: {{ .Values.config.targetEmailSubject | quote }}
 apiVersion: apps/v1
