@@ -77,7 +77,7 @@ docker compose logs -f
 - **TARGET_EMAIL_SUBJECT**: The email subject to monitor e.g. *"How to update your Netflix household"*
 
 ## Docker image build
-`docker buildx build     --builder armbuilder     --platform linux/arm64,linux/amd64 --push     --no-cache     -f imap-netflix-household-automation.dockerfile     -t dawidch/imap-netflix-household-automation:1.0.0     --progress=plain  --network host   .`
+`docker buildx build     --builder armbuilder     --platform linux/arm64,linux/amd64 --push     --no-cache     -f imap-netflix-household-automation.dockerfile     -t dawidch/netflix-household-automation:1.0.0     --progress=plain  --network host   .`
 
 ## ArgoCD
 Application custom resource to use with argocd deployment.
